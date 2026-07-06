@@ -159,33 +159,36 @@ export const Portfolio = (): JSX.Element => {
           </div>
 
           {/* Intro text */}
-          <div className="relative text-center md:text-left">
-            <div className="mb-2 flex flex-wrap items-center justify-center md:justify-start gap-1.5 font-preahvihear text-[14px] md:text-[17px] tracking-[0.34px]">
-              <span className="text-white underline decoration-white/30 underline-offset-4">
-                Hi i am
-              </span>
-              <span className="text-[#7127ba] underline decoration-[#7127ba]/50 underline-offset-4">
-                Sreeram
-              </span>
+          <div className="relative w-full flex flex-col md:block">
+            <div className="text-left w-full overflow-x-auto no-scrollbar">
+              <div className="mb-2 flex flex-nowrap items-center justify-start gap-1.5 font-preahvihear text-[13px] md:text-[17px] tracking-[0.34px] whitespace-nowrap">
+                <span className="text-white">
+                  Hi i am
+                </span>
+                <span className="text-[#7127ba]">
+                  Sreeram,
+                </span>
+                <span className="text-white">
+                  A Designer who:
+                </span>
+              </div>
             </div>
-            <p className="mb-2 font-preahvihear text-[14px] md:text-[17px] tracking-[0.34px] text-white underline decoration-white/30 underline-offset-4">
-              A Designer who
-            </p>
-            <div className="mb-4 inline-block">
-              <h1 className="font-preahvihear text-[32px] md:text-[50px] font-normal leading-[1.05] tracking-[0.5px]">
+            
+            <div className="mb-4 text-right md:text-left self-end md:self-auto w-full overflow-x-auto no-scrollbar py-2 -my-2 md:py-0 md:-my-0">
+              <h1 className="inline-block font-preahvihear text-[24px] sm:text-[32px] md:text-[50px] font-normal leading-[1.05] tracking-[0.5px] text-right md:text-left whitespace-nowrap md:whitespace-normal">
                 <span className="text-white">
                   Judges a book
-                  <br />
-                  by its{" "}
+                  <br className="hidden md:block" />
+                  <span className="md:hidden"> </span>by its{" "}
                 </span>
                 <span className="relative inline-block">
-                  <span className="pointer-events-none absolute left-1/2 top-1/2 h-[42px] w-[110px] md:h-[52px] md:w-[170px] -translate-x-1/2 -translate-y-1/2 -rotate-[4.74deg] rounded-full border border-white/70" />
+                  <span className="pointer-events-none absolute left-1/2 top-1/2 h-[38px] w-[96px] md:h-[52px] md:w-[170px] -translate-x-1/2 -translate-y-1/2 -rotate-[4.74deg] rounded-full border border-white/70" />
                   <span className="relative z-10 text-[#7127ba]">cover</span>
                 </span>
                 <span className="text-white">...</span>
               </h1>
             </div>
-            <p className="-mt-1 md:mt-0 font-preahvihear text-[10px] md:text-[11px] tracking-[0.22px] text-white/80">
+            <p className="-mt-1 md:mt-0 font-preahvihear text-[10px] md:text-[11px] tracking-[0.22px] text-white/80 text-right md:text-left w-full">
               Because if the cover does not impress you what else can?
             </p>
           </div>
